@@ -1,5 +1,7 @@
 package api.endpoints;
 
+import api.payload.*;
+
 
 import static io.restassured.RestAssured.given;
 
@@ -11,6 +13,8 @@ import io.restassured.response.Response;
 //CRUD request operations to User Api
 public class UserEndPoints {
 
+	
+	//User model requests - CRUD
 	
 	public static Response createUser(User payload)
 	{
@@ -64,4 +68,99 @@ public class UserEndPoints {
 	
 		return res;
 	}
+	
+	//Pet Model requests
+	public static Response createPet(Pet payload)
+	{
+		Response res = 
+		given()
+			.contentType(ContentType.JSON)
+			.accept(ContentType.JSON)
+			.body(payload)
+		
+		.when()
+			.post(Routes.pet_post_url);
+		
+		return res;
+	}
+	
+	public static Response readPet(long petId)
+	{
+		Response res = 
+		given()
+			.pathParam("petId", petId)
+		
+		.when()
+			.get(Routes.pet_get_url);
+	
+		return res;
+	}
+	
+	public static Response updatePet(String petId, Pet payload)
+	{
+		Response res = 
+		given()
+			.pathParam("petId", petId)
+			.contentType(ContentType.JSON)
+			.accept(ContentType.JSON)
+			.body(payload)
+		
+		.when()
+			.post(Routes.pet_put_url);
+	
+		return res;
+	}
+	
+	public static Response deletePet(long petId)
+	{
+		Response res = 
+		given()
+			.pathParam("petId", petId)
+		
+		.when()
+			.delete(Routes.pet_delete_url);
+	
+		return res;
+	}
+	
+	//order requests
+	
+	//Pet Model requests
+		public static Response createOrder(Order payload)
+		{
+			Response res = 
+			given()
+				.contentType(ContentType.JSON)
+				.accept(ContentType.JSON)
+				.body(payload)
+			
+			.when()
+				.post(Routes.order_post_url);
+			
+			return res;
+		}
+		
+		public static Response readOrder(int orderId)
+		{
+			Response res = 
+			given()
+				.pathParam("orderId", orderId)
+			
+			.when()
+				.get(Routes.order_get_url);
+		
+			return res;
+		}
+		
+		public static Response deleteOrder(int orderId)
+		{
+			Response res = 
+			given()
+				.pathParam("orderId", orderId)
+			
+			.when()
+				.delete(Routes.order_delete_url);
+		
+			return res;
+		}
 }

@@ -20,10 +20,19 @@ public class Routes {
 	public static String put_url = base_url +"/user/{username}";
 	public static String delete_url = base_url +"/user/{username}";
 	
-	// Store model urls
-	
 	
 	//Pet Model urls
+	public static String pet_post_url = base_url +"/pet";
+	public static String pet_get_url = base_url +"/pet/{petId}";
+	public static String pet_put_url = base_url +"/pet/{petId}";
+	public static String pet_delete_url = base_url +"/pet/{petId}";
+	
+	
+	// Store model urls
+	
+	public static String order_post_url = base_url +"/store/order";
+	public static String order_get_url = base_url +"/store/order/{orderId}";
+	public static String order_delete_url = base_url +"/store/order/{orderId}";
 }
 
 

@@ -1,7 +1,11 @@
 /Users/kappu/eclipse-workspace/PetStoreAutomation/src/test/java/api/endpoints/Routes.java
 /Users/kappu/eclipse-workspace/PetStoreAutomation/src/test/java/api/endpoints/UserEndPoints.java
+/Users/kappu/eclipse-workspace/PetStoreAutomation/src/test/java/api/payload/Order.java
+/Users/kappu/eclipse-workspace/PetStoreAutomation/src/test/java/api/payload/Pet.java
 /Users/kappu/eclipse-workspace/PetStoreAutomation/src/test/java/api/payload/User.java
 /Users/kappu/eclipse-workspace/PetStoreAutomation/src/test/java/api/test/DataDrivenTests.java
+/Users/kappu/eclipse-workspace/PetStoreAutomation/src/test/java/api/test/OrderTest.java
+/Users/kappu/eclipse-workspace/PetStoreAutomation/src/test/java/api/test/PetTest.java
 /Users/kappu/eclipse-workspace/PetStoreAutomation/src/test/java/api/test/UserTests.java
 /Users/kappu/eclipse-workspace/PetStoreAutomation/src/test/java/api/utilities/DataProviders.java
 /Users/kappu/eclipse-workspace/PetStoreAutomation/src/test/java/api/utilities/ExtentReportManager.java

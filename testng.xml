@@ -3,13 +3,14 @@
 <suite name="PetSuite">
 	
 	<listeners>
-			<listener class-name="api.utilities.ExtentReportManager"></listener>
+			<listener class-name="api.utilities.ExtentReportManager"/>
 	</listeners>
 
   <test thread-count="5" name="PetTest">
     <classes>
      <!-- <class name="api.test.DataDrivenTests"/> -->
-      <class name="api.test.UserTests"/>
+    <!--  <class name="api.test.UserTests"/> -->
+      <class name="api.test.PetTest"/>
     </classes>
   </test> <!-- PetTest -->
 </suite> <!-- PetSuite -->

@@ -21,14 +21,21 @@ public class ExtentReportManager implements ITestListener
 	public ExtentReports extent;
 	public ExtentTest test;
 	
-	String repName;
+	public String reportFilePath = "/Users/kappu/eclipse-workspace/PetStoreAutomation/reports/extent-report.html";
+
 	
 	public void onStart(ITestContext testContext)
 	{		
 		String timeStamp = new SimpleDateFormat("yyyy.MM.dd.HH.mm.ss").format(new Date());//time stamp
-		repName="Test-Report-"+timeStamp+".html";
+		//repName="Test-Report-"+timeStamp+".html";
+		
+		/*
+		 * 
+		 * /Users/kappu/eclipse-workspace/PetStoreAutomation/reports
+		 * 
+		 */
 				
-		sparkReporter=new ExtentSparkReporter(".\\reports\\"+repName);//specify location of the report
+		sparkReporter=new ExtentSparkReporter(reportFilePath);//specify location of the report
 				
 		sparkReporter.config().setDocumentTitle("RestAssuredAutomationProject"); // Title of report
 		sparkReporter.config().setReportName("Pet Store Users API"); // name of the report

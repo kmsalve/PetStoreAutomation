@@ -1,0 +1,21 @@
+10:31:24.930 [main] INFO  api.test.PetTest - *********** Started *********
+10:31:24.942 [main] INFO  api.test.PetTest - *********** Pet User *********
+10:31:26.501 [main] INFO  api.test.PetTest - *********** Pet is created *********
+10:31:26.510 [main] INFO  api.test.PetTest - ***********Reading User*********
+10:31:27.030 [main] INFO  api.test.PetTest - ***********Pet is read *********
+10:31:27.034 [main] INFO  api.test.PetTest - *********** Deleting Pet *********
+10:31:27.523 [main] INFO  api.test.PetTest - *********** Pet Deleted *********
+14:22:04.978 [main] INFO  api.test.PetTest - *********** Started *********
+14:22:04.985 [main] INFO  api.test.PetTest - *********** Pet User *********
+14:22:06.641 [main] INFO  api.test.PetTest - *********** Pet is created *********
+14:22:06.649 [main] INFO  api.test.PetTest - ***********Reading User*********
+14:22:07.222 [main] INFO  api.test.PetTest - ***********Pet is read *********
+14:22:07.224 [main] INFO  api.test.PetTest - *********** Deleting Pet *********
+14:22:07.745 [main] INFO  api.test.PetTest - *********** Pet Deleted *********
+14:31:01.511 [main] INFO  api.test.PetTest - *********** Started *********
+14:31:01.521 [main] INFO  api.test.PetTest - *********** Pet User *********
+14:31:03.608 [main] INFO  api.test.PetTest - *********** Pet is created *********
+14:31:03.617 [main] INFO  api.test.PetTest - ***********Reading User*********
+14:31:04.181 [main] INFO  api.test.PetTest - ***********Pet is read *********
+14:31:04.183 [main] INFO  api.test.PetTest - *********** Deleting Pet *********
+14:31:04.619 [main] INFO  api.test.PetTest - *********** Pet Deleted *********
